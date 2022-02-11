@@ -1,0 +1,186 @@
+$Blue: #2C9BFF;
+$Pink: #F9DBD7;
+$Grey: #F5F5F5;
+
+body {
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    vertical-align: bottom;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    background-image: url("/Users/callumtiffany/Documents/Superhi!/wk5homework/1-Assets/hero.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 20px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+
+nav h1 {
+    margin: 0;
+}
+
+nav .selected {
+    border-bottom: solid 2px black;
+
+}
+
+.about {
+    display: flex;
+    width: 100%;
+}
+
+
+.guitars {
+    background-color: $Blue;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+    display: flex;
+}
+
+
+.guitars img {
+    padding: 65px;
+}
+
+.intro {
+    background-color: $Pink;
+    color: $Blue;
+    align-items: center;
+    width: 50%;
+    padding: 65px;
+}
+
+.intro h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    margin-bottom: 35px;
+}
+
+.store {
+    padding: 25px;
+    margin-left: 20px;
+    
+}
+
+.store h3 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+
+
+
+.filters {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.filters_list  {
+    display: flex;
+    
+}
+
+.filters li {
+    margin-right: 20px;
+}
+
+.show_filters {
+    display: none;
+    margin-right: 20px;
+}
+
+.filters_list .selected {
+    border-bottom: solid 2px $Blue;
+    font-weight: 700;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 980px;
+    margin: 40px auto 80px;
+}
+
+.product_vinyl {
+    width: 33.3%;
+    position: relative; 
+}
+
+.overlay {
+    color: white;
+    position: absolute;  
+    background-color:rgba(44, 155, 255, 0.7);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.product_vinyl .overlay:hover {
+    opacity: 1;
+}
+
+.overlay h3 {
+    font-size: 20px;
+}
+.overlay p {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+footer {
+    background-color: $Blue;
+    height: 50px;
+    padding-left: 20px;
+    text-align: center;
+}
+
+
+@media (max-width:768px) {
+
+
+
+.show_filters {
+    display: inline-block
+
+}
+
+
+}
+
+
